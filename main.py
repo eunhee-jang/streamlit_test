@@ -190,7 +190,7 @@ with tabs[3]:
     r2_score = model.score(X_test, y_test)
 
     st.subheader("1) 모델 학습 결과")
-    st.write(f"회귀 계수: {model.coef}")
+    st.write(f"회귀 계수: {model.coef_}")
     st.write(f"절편: {model.intercept_:.2f}")
     st.metric("R² (테스트 세트)", f"{r2_score:.2f}")
 
